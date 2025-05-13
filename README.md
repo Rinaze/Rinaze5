@@ -1,5 +1,6 @@
 ## Диаграмма классов для задания Практика «Циклы Brainfuck»
-![image](https://github.com/user-attachments/assets/e64b92ee-10c5-429d-91dd-f72ab4b54798)
+![image](https://github.com/user-attachments/assets/db16a459-9bd7-41a2-9a37-4c24ccc35d31)
+
 
 ### Описание основных сущностей
 
@@ -30,9 +31,9 @@
 Реализует команды для работы с циклами языка Brainfuck (например, команды [ и ]).
 
 **Методы:**
-- void RegisterTo(IVirtualMachine virtualmash) - регистрирует команды цикла в виртуальной машине.
-- void DoCommandOpenBracket(IVirtualMachine virtualmash, Dictionary ibracket) - выполняет команду открытия цикла (`[`), используя карту соответствий скобок.
-- void DoCommandCloseBracket(IVirtualMachine virtualmash, Dictionary ibracket) - выполняет команду закрытия цикла (`]`), используя карту соответствий скобок.
+- void RegisterTo(IVirtualMachine vm) - регистрирует команды цикла в виртуальной машине.
+- void DoCommandOpenBracket(IVirtualMachine vm, Dictionary ibracket) - выполняет команду открытия цикла (`[`), используя карту соответствий скобок.
+- void DoCommandCloseBracket(IVirtualMachine vm, Dictionary ibracket) - выполняет команду закрытия цикла (`]`), используя карту соответствий скобок.
   
 ### 4. **Dictionary**
 
